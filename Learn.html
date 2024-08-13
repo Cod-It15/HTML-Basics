@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="description" content="To Learn web development">
+  <title>Learn</title>
+  <link rel="stylesheet" href="style(practice).css">
+</head>
+<style>
+  
+  
+  /* ⁡⁢⁣⁢  CSS Selectors */
+  ⁡
+/* ⁡⁣⁢⁣Universal Selector⁡ */
+*{
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box
+}
+
+  /* ⁡⁣⁢⁣Element Selector⁡ */
+  div {
+    border: 1px solid DodgerBlue;
+  }
+
+  /* ⁡⁣⁢⁣Class Selector⁡ */
+  .class {
+    background-color: chartreuse;
+    color: black;
+  }
+
+  /* ⁡⁣⁢⁣Id Selector⁡ */
+  #id {
+    background-color: black;
+    color: chartreuse;
+  }
+
+  /* ⁡⁣⁢⁣Child Selector⁡ */
+  body>P {
+    font-size: 20px;
+    color: blue
+  }
+
+  /* ⁡⁢⁢⁢Diff BTW Descendant Selector And Child Selector is that⁡ 
+⁡⁣⁢⁣The selector in Child Selector has to Be acurate And exact as if it is div > p so Nothing must be between p and div⁡
+⁡⁣⁣⁢ While⁡
+⁡⁣⁢⁣The Selector in  Descendant Selector Dont has to be accurate instead we can specify the parent and child with space and it doesnt matter that if any other tag is between parent and child .⁡ */
+
+  /* ⁡⁣⁢⁣Descendent Selector⁡ */
+  div p {
+    border: 3px solid aquamarine
+  }
+
+  /*⁡⁣⁣⁢ ⁡⁣⁢⁣Pseudo Selector⁡ ⁡*/
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: dotted;
+
+  }
+
+  a:visited {
+    color: rgba(0, 255, 221, 0.895);
+    background-color: transparent;
+    text-decoration: line-through;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: overline;
+  }
+
+  span:hover{
+background: #000;
+opacity:20%;
+  }
+
+  aside:first-child{
+    background: yellowgreen ;
+  }
+</style>
+<body>
+  <H1>Learn HTML</H1>
+  <!-- ⁡⁣⁢⁣Horizontal Line Tag⁡ -->
+  <hr>
+  <p>Here is a quote from wikipedia's website:
+  <blockquote cite="https://en.wikipedia.org/wiki/Pakistan">Pakistan, is a country in South Asia. It is the fifth-most
+    populous country, with a population of over 241.5 million, having the second-largest Muslim population as of
+    2023. Islamabad is the nation's capital, while Karachi is its largest city and financial centre. Pakistan is the
+    33rd-largest country by area and the ninth-largest in Asia. Bounded by the Arabian Sea on the south, the Gulf of
+    Oman on the southwest, and the Sir Creek on the southeast, it shares land borders with India to the east;
+    Afghanistan to the west; Iran to the southwest; and China to the northeast. It shares a maritime border with
+    Oman in the Gulf of Oman, and is separated from Tajikistan in the northwest by Afghanistan's narrow Wakhan
+    Corridor.</blockquote>
+  </p>
+  <p>This is from Wikipedia Pakistan:<q>Pakistan, officially the Islamic Republic of Pakistan</q></p>
+  <!--  *   These are some Formatting Tags:
+*        <b> - Bold text
+*        <strong> - Important text
+*        <i> - Italic text
+*        <em> - Emphasized text
+*        <mark> - Marked text
+*        <small> - Smaller text
+*        <del> - Deleted text
+*        <ins> - Inserted text
+*        <sub> - Subscript text
+*        <sup> - Superscript text -->
+
+
+  <p>
+    <b>Bold</b>
+    <strong>Strong</strong><br>
+    <strike>Strike</strike><br>
+    <i>Italic</i><br>
+    <mark>Mark</mark><br>
+    <small> Small</small><br>
+    <em>Emphasized text</em><br>
+    <del>deleted text</del><br>
+  <details>details</details><br>
+  <ins> insert </ins><br>
+  <sub>sub</sub><br>
+  <sup>sup</sup>
+  </p>
+  <div>
+    <main>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae autem laboriosam nulla accusamus, et voluptate
+        quod saepe ea tenetur minus asperiores, sequi quo dolorem consequuntur nemo minima earum officia iure.
+      </p>
+    </main>
+  </div>
+  <div>
+    <H2 class="class ok">
+This Is Class Selector Result
+    </H2>
+  </div>
+  <div>
+    <H2 id="id">
+This Is ID Selector Result
+    </H2>
+  </div>
+<span >This is Pseudo Selector "hover" Result</span>
+<main>
+<aside>I am first-child</aside>
+<aside>I am  second-child </aside>
+</main>
+  <!--
+*     Colors : RGB{0(represents Red),0(represents Green),0(represents Blue)}
+!              RGBa{0(represents Red),0(represents Green),0(represents Blue)0(represents Shades of Grey)}
+*/             HSL{hue, saturation, lightness}
+?              HEX{#[rr(represents Red),gg(represents Green),bb(represents Blue)]} -> ff represents highest
+ -->
+
+  <!-- 
+! We can use css three ways
+* 1 Inline   - by using the style attribute inside HTML elements
+* 2 Internal - by using a <style> element in the <head> section
+* 3 External - by using a <link> element to link to an external CSS file
+ -->
+
+  <p style="background-color: aqua;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur sit quisquam
+    iure in, obcaecati suscipit modi eius recusandae facere odio veritatis a voluptatem impedit? Assumenda consequuntur
+    numquam atque sed voluptatibus?</p>
+
+  2 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta praesentium illum ipsam unde sed reiciendis,
+    atque dolor, architecto aliquam illo perferendis asperiores odio necessitatibus ullam magnam voluptatum nostrum.
+    Asperiores, debitis?</P>
+
+  3 <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem accusamus, distinctio illo dignissimos
+      asperiores saepe hic sit laborum aliquam incidunt sint. Quas itaque inventore eius accusantium, eos deleniti nam.
+    </p>
+  </div>
+  <!-- ⁡⁢⁢⁢<Video></Video> to display a video on our webpage from our computer⁡ -->
+<!-- ⁡⁢⁣⁣Video attributes⁡ -->
+<!-- ⁡⁣⁣⁢src: Specifies the path to the video file.
+controls: Adds video controls, like play, pause, and volume.
+autoplay: Automatically starts playing the video when the page loads.
+loop: Repeats the video once it ends.
+muted: Mutes the video by default.
+poster: Specifies an image to be displayed before the video starts playing.
+width and height: Specifies the dimensions of the video.⁡ -->
+  <video src="You know whom to send🤣.mp4" width="300px" height="300px" controls></video>
+<!-- ⁡⁢⁡⁢⁢⁢<Audio></Audio> to display a audio on our webpage from our computer⁡ -->
+<!-- ⁡⁢⁣⁣Audio attributes⁡ -->
+<!-- 
+⁡⁣⁣⁢src:S⁡⁣⁣⁢pecifies the path to the audio file.
+controls: Adds audio controls, like play, pause, and volume.
+autoplay: Automatically starts playing the audio when the page loads.
+loop: Repeats the audio once it ends.
+muted: Mutes the audio by default.
+preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none').⁡
+⁡ -->
+<audio src="Grateful(PaglaSongs).mp3" width="300px" height="300px" controls></audio>
+<!-- ⁡⁢⁢⁢<iframe></iframe> to display a iframe on our webpage from our computer⁡ -->
+<!-- ⁡⁢⁣⁣iframe attributes⁡ -->
+<!-- ⁡⁣⁡⁣⁣⁢src⁡⁣⁣⁢: Specifies the URL of the page to embed.
+height and width: Define the dimensions.
+frameborder: Indicates whether to display a border.
+scrolling: Controls the scrollbars.
+name: For targeting the iFrame in JavaScript.⁡⁡ -->
+<iframe src="https://www.youtube.com/embed/XZwBNDGuWGU?si=HxUj9b_FAPMdiV_A" frameborder="0"></iframe>
+  <!--
+! ⁡⁢⁣⁢CSS basic properties⁡
+*     ⁡⁢⁣⁣- Use the style attribute for styling HTML elements
+*     - background-color for background color
+*     - Use color for text colors
+*     - Use font-family for text fonts
+*     - Use font-size for text sizes
+*     - Use text-align for text alignment
+*     - Use text-decoration for text decorations
+*     - Use text-transform for text transformations
+*     - Use line-height for line spacing
+*     - Use margin for margins
+*     - Use padding for padding
+*     - Use border for borders
+*     - Use border-radius for rounded corners
+*     - Use width for width
+*     - Use height for height
+*     - Use float for floating elements
+*     - Use clear for clearing floats
+*     - Use overflow for hiding content
+*     - Use position for positioning elements
+*     - Use z-index for stacking elements
+*     - Use display for displaying elements
+*     - Use visibility for hiding elements
+*     - Use opacity for transparency
+*     - Use cursor for changing the cursor
+*     - Use transition for animating elements
+*     - Use animation for animating elements
+*     - Use transform for transforming elements
+*     - Use filter for applying filters to elements
+*     - Use clip-path for clipping elements
+*     - Use box-shadow for adding shadows to elements
+*     - Use text-shadow for adding shadows to text
+*     - Use background-image for adding images to elements
+*     - Use background-repeat for repeating images
+*     - Use background-position for positioning images
+*     - Use background-size for sizing images
+*     - Use background-attachment for attaching images
+*     - Use background-origin for positioning images
+*     - Use background-clip for clipping images
+*     - Use background-color for setting the background color
+*     - Use background-image for adding images to the background⁡
+       -->
+  <p style="background-color: burlywood;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aut eius
+    debitis amet praesentium nisi nulla modi possimus quo minima sapiente illum temporibus, optio ut quibusdam quis vel
+    assumenda recusandae totam suscipit. Nihil corporis quas nobis nostrum nemo ut omnis maiores sint, pariatur magni,
+    earum itaque temporibus, dolorem illo adipisci.</p>
+
+  <!-- 
+!        Hyperlinks 
+ ?      - Use the a element for creating hyperlinks
+ ?     - Use the href attribute for specifying the link destination
+ ?     - Use the target attribute for specifying the target window for the link: _blank
+ ?     - Use the rel attribute for specifying the relationship between the current document and the linked document:
+ ?     - Use the title attribute for specifying a tooltip for the link
+ ?     - Use the download attribute for specifying a file to download when the link is clicked
+ ?     - Use the media attribute for specifying the media type for the link
+ ?     - Use the type attribute for specifying the MIME type for the link
+?     - Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+ -->
+  <p>Part Of Links</p>
+  <h2>Absolute URLs</h2>
+  <p><a href="https://www.w3.org/">W3C</a></p>
+  <p><a href="https://www.google.com/">Google</a></p>
+
+  <h2>Relative URLs</h2>
+  <p><a href="html_images.asp">HTML Images</a></p>
+  <p><a href="/css/default.asp">CSS Tutorial</a></p>
+  <p><a href="www.google.com">CSS Tutorial</a></p>
+
+
+  <DIV>We Can Use Image as a link =</DIV>
+  <a href="https://www.w3schools.com/">
+    <img src="/peakpx (2).jpg" alt="HTML tutorial" style="width:42px;height:42px;">
+  </a><br>
+  <!-- Some Types of buttons -->
+  <button type="button" title="Button.url">Simple</button><br>
+  <button disabled="disabled">disabled</button><br>
+  <button type="reset">Reset Button</button><br>
+  <button type="submit">Submit Button</button><br>
+  <button>button tag</button><br>
+  <button onclick="document.location='Periodic Table.html'">file linked button</button><br>
+  <button type="button" onclick="alert('Hello World!')">Click me!</button><br>
+  <button type="button" onclick="document.location.href='https:www.google.com'">Website linked Button</button>
+
+  <!--! List -->
+  <!-- Elements Of list -->
+  <!-- ?     - Use the ul element for creating unordered lists -->
+  <!-- ?     - Use the ol element for creating ordered lists -->
+  <!-- ?     - Use the li element for creating list items -->
+  <!--* Examples -->
+  <h2>Unordered List</h2>
+  <ul>
+    <li>Water</li>
+    <li>Coffee</li>
+    <li>Cappacuino</li>
+    <li>Soft Drink</li>
+    <li>Smoothies</li>
+  </ul>
+  <h2>Ordered list</h2>
+  <ol>
+    <li>Water</li>
+    <li>Coffee</li>
+    <li>Cappacuino</li>
+    <li>Soft Drink</li>
+    <li>Smoothies</li>
+  </ol>
+
+  <!-- ?     - Use the dl element for list of details <dl> -->
+  <!-- ?     - Use the dt element for data terms to state topics you want to provide details for. <dt> -->
+  <!-- ?     - Use the dd element for stating the details data for the data terms /topics. <dd> -->
+
+  <h2>Details list</h2>
+  <dl>
+    <dt>Water</dt>
+    <dd>
+      Water is an inorganic compound with the chemical formula H2O, composed of hydrogen and oxygen. It exists in three
+      states: liquid, solid (ice), and gas (steam or vapor). Water is essential for all known forms of life and covers
+      about 71% of the Earth's surface, forming lakes, oceans, rivers, and rainfall.
+    </dd>
+    <dt>Coffee</dt>
+    <dd>
+      Coffee is a beverage brewed from roasted coffee beans, which are the seeds of the tropical evergreen coffee plant
+      of African origin.
+    </dd>
+    <dt>Cappacuino</dt>
+    <dd>
+      A cappuccino is an espresso-based coffee drink made with a balanced combination of espresso, steamed milk, and a
+      layer of milk foam on top. It's known for its rich flavor and creamy texture.
+    </dd>
+    <dt>Soft Drink</dt>
+    <dd>
+      Soft drinks are sweetened beverages that typically contain carbonated water, a sweetener, and flavorings.
+    </dd>
+    <dt>Smoothies</dt>
+    <dd>
+      Smoothies are blended beverages made from fruits, vegetables, and often other ingredients like yogurt or protein
+      powders. They are popular for their nutritional benefits and versatility, serving as natural energy drinks or
+      filling breakfasts.
+    </dd>
+  </dl>
+
+  <Details>
+    <li>Details</li>
+    <li>Details</li>
+    <li>Details</li>
+    <li>Details</li>
+  </Details>
+  <!--!     - Use the details tag  for giving  details without using list tag and the details must be hidden and only show on click -->
+
+  <!--* This is a Header -->
+  <Header>Header content</Header>
+  <!--! Table -->
+  <!-- ?     - Use the table element for creating tables (<table></table>)  -->
+  <!-- ?     - Use the th element for creating first row  tables as heading row of a table (<th></th>)  -->
+  <!-- ?     - The th row is enclosed in theader (<thead></thead>)  -->
+  <!-- ?     - Use the tr element for creating other rows  tables as heading row of a table (<tr></tr>)  -->
+  <!-- ?     - Use the td element for creating other rows  tables as heading row of a table (<td></td>)  -->
+  <!-- ?     - The whole table data axcept footer is enclosed in tbody. (<tbody></tbody>)  -->
+
+
+  <h2>Table</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Goal</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>M.Ayaan</td>
+        <td>O-2</td>
+        <td>Machine Learning</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>M.Siddique</td>
+        <td>O-2</td>
+        <td>Cheif Of Naval Staff</td>
+        <td>14</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>M.Rafay</td>
+        <td>Grade 6</td>
+        <td>Fleet</td>
+        <td>10</td>
+      </tr>
+    </tfoot>
+  </table>
+  <!--! Colspan -->
+  <!-- ?     - Use the colspan attr for making cover no. of coloumns  of a table(colsan=(value))  -->
+  <!-- ?     - Use the rowspan attr for making cover no. of rows  of a table(rowspan=(value))  -->
+  <!--* Example -->
+  <h3> Colspan </h3>
+  <caption>Colspan {Table Caption content}</caption>
+  <caption>Colspan {Table Caption content}</caption>
+  <table border="1px">
+    <tr>
+      <td colspan="2">Colspan</td>
+      <td>Test</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>Test</td>
+      <td>Test</td>
+    </tr>
+  </table>
+  <h3> Rowspan </h3>
+  <caption>Rowspan {Table Caption content}</caption>
+  <table border="1">
+    <tr>
+      <td rowspan="2">Rowspan</td>
+      <td>Test/test</td>
+      <td>Test/test</td>
+    </tr>
+    <tr>
+      <td>Test/test</td>
+      <td>Test/test</td>
+    </tr>
+  </table>
+
+  <!--* This is a Footer -->
+  <Footer>Footer content</Footer>
+  <br><br><br>
+
+  <h2>Inputs in a Form </h2>
+  ⁡⁣⁢⁣<!-- These are all input types in a form -->⁡
+  <!--~ Whatever you type in the id attr you must type that also in for attr in label  -->
+  <form style="color: coral;" action="#" method="post">
+    <div>
+      <Label for="name">Name</Label>
+      <input title="Enter Your Name" type="text" name="name" id="name" placeholder="Enter Your Name" required autofocus
+        autocapitalize="">
+    </div>
+    <br>
+    <div>
+      <Label for="email">Email</Label>
+      <input type="email" name="email" id="email" title="Enter Your Email" placeholder="someone@gmail.com" required>
+    </div>
+    <br>
+    <div>
+      <label for="gender">Gender</label><br>
+      <br>
+      <input type="radio" name="gender" id="male" title="Select Your Gender" placeholder="Select Your Gender">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" title="Select Your Gender
+  " placeholder="Select Your Gender">
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <label for="checkbox">Checkbox</label>
+      <input type="checkbox" name="" id="" title="Checkbox">
+      <!-- checkbox -->
+    </div>
+    <div>
+      <label for="color">Colors</label>
+      <input type="color" name="" id="" title="Choose a Color">
+      <!-- color -->
+    </div>
+    <div>
+      <label for="date">Date</label>
+      <input type="date" name="" id="">
+      <!-- date -->
+    </div>
+    <div>
+      <label for="datetime">Date Time</label>
+      <input type="datetime" name="" id="">
+      <!-- datetime -->
+    </div>
+    <div>
+      <label for="datetime-local">datetime-local</label>
+      <input type="datetime-local" name="" required id="">
+      <!-- datetime-local -->
+    </div>
+    <div>
+      <label for="file">File</label>
+      <input type="file" name="" id="">
+      <!-- file -->
+    </div>
+    <div>
+      <label for="hidden">Hidden</label>
+      <input type="hidden" name="">
+      <!-- hidden -->
+    </div>
+    <div>
+      <label for="image">Image</label>
+      <input type="image" src="" alt="">
+      <!-- image -->
+    </div>
+    <div>
+      <label for="month">Month</label>
+      <input type="month" name="" id="">
+      <!-- month -->
+    </div>
+    <div>
+      <label for="number">Number</label>
+      <input type="number" name="" id="">
+      <!-- number -->
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="" id="">
+      <!-- password -->
+    </div>
+    <div>
+      <label for="range">Range</label>
+      <input type="range" name="" id="" min="0" max="90" title="range" value="50" step="1">
+      <!-- range -->
+    </div>
+    <div>
+      <label for="reset">Reset</label>
+      <input type="reset" value="">
+      <!-- reset -->
+    </div>
+    <div>
+      <label for="Search">Search</label>
+      <input type="search" name="" id="">
+      <!-- search -->
+    </div>
+    <div>
+      <label for="submit">Submit</label>
+      <input type="submit" value="">
+      <!-- submit -->
+    </div>
+    <div>
+      <label for="tel">Tel</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      <!-- tel -->
+    </div>
+    <div>
+      <label for="time">Time</label>
+      <input type="time" name="" id="">
+      <!-- time -->
+    </div>
+    <div>
+      <label for="url">Url</label>
+      <input type="url" name="" id="url">
+      <!-- url -->
+    </div>
+    <div>
+      <label for="week">Week</label>
+      <input type="week" name="" id="" title>
+      <!-- week -->
+    </div>
+  </form>
+  <br><br><br>
+  <h2>Text Area</h2>
+  <!--~ This is a text area block -->
+  <div>
+    <textarea name="" id="" cols="20" rows="10" placeholder="Enter Text" title="Enter Text"></textarea>
+  </div>
+  <div>
+    <h2>Select Coloumn</h2>
+
+
+    <!--~ This is a Select Coloumn -->
+    <label for="Select">Select</label>
+    <select name="Chocolatte" id="Select">
+      <option value="">Lindtt</option>
+      <option value="">Ferrerro Rocher</option>
+      <option value="">Crunch</option>
+      <option value="">Dairy Milk</option>
+      <option value="">Fuse</option>
+      <option value="">5 Star</option>
+      <option value="">Mars</option>
+      <option value="">Snickers</option>
+      <option value="">Bubbly</option>
+      <option value="">Feastables</option>
+      <option value="">Hershey's</option>
+    </select>
+  </div>
+
+  <div>
+    <img src="/semantic-tags.png" alt="Semantic-Tags" width="400px" height="400px">
+  </div>
+
+  ⁡⁢⁢⁢ <!-- Some common Semantic-Tags
+⁡⁡
+⁡⁢⁢⁣⁡⁣⁢⁣  <header>: Used to represent the top section of a web page, often containing headings, logos, and navigation.
+  <nav>: Signifies a navigation menu on a web page.
+  <𝗮𝗿𝘁𝗶𝗰𝗹𝗲>: 𝗜𝗻𝗱𝗶𝗰𝗮𝘁𝗲𝘀 𝗮 𝘀𝗲𝗹𝗳-𝗰𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗱 𝗽𝗶𝗲𝗰𝗲 𝗼𝗳 𝗰𝗼𝗻𝘁𝗲𝗻𝘁, 𝘀𝘂𝗰𝗵 𝗮𝘀 𝗮 𝗯𝗹𝗼𝗴 𝗽𝗼𝘀𝘁 𝗼𝗿 𝗻𝗲𝘄𝘀 𝗮𝗿𝘁𝗶𝗰𝗹𝗲.
+  <section>: Represents a thematic grouping of content on a web page.
+  <aside>: Typically used for sidebars or content that is tangentially related to the main content.
+  <footer>: Represents the footer of a web page, usually containing copyright information and contact details.
+  <figure> and <figcaption>: Used for embedding images, diagrams, or charts, along with a caption.
+  <main>: Signifies the main content area of a web page.
+  <time>: Used to represent time-related information, like dates and times.
+  -->
+  ⁡⁢⁣⁢<!--⁡ ⁡⁣⁢⁣Note:⁡ ⁡⁢⁣⁢We Must use Semantic Tags instead of using Div And Span in Bulk⁡⁡⁢⁣⁢ -->⁡
+
+
+  <!--⁡⁢⁣⁣ We can add these using entities⁡ -->
+  <!-- ⁡⁢⁢⁢Reserved Characters: Characters like <, >, and & are reserved in HTML.
+Special Symbols: For symbols like ©, ®, or mathematical symbols.
+Non-Breaking Spaces: To create white spaces that won't break into a new line.⁡ -->
+  ⁡⁢⁣⁢<!-- Entities:  -->⁡
+  ⁡⁢⁢⁣<!--⁡⁡⁣⁢⁢ ⁡⁣⁢⁣&lt;  for < ⁡⁢⁢⁣-->⁡
+  ⁡⁣⁢⁣⁡⁢⁢⁣<!--⁡ ⁡⁣⁢⁣&gt;  for >⁡ ⁡⁢⁢⁣-->⁡
+  ⁡⁢⁢⁣<!--⁡ ⁡⁣⁢⁣&amp; for &⁡ ⁡⁢⁢⁣-->⁡
+  ⁡⁢⁢⁣<!--⁡ ⁡⁣⁢⁣&nbsp; for a non-breaking space⁡ ⁡⁢⁢⁣-->⁡
+  ⁡⁢⁢⁣<!--⁡ ⁡⁣⁢⁣&copy; for © ⁡⁢⁢⁣-->⁡
+
+  ⁡⁢⁣⁣<!-- Previewing code on website -->
+  ⁡<h3>This is HTML Boiler Plate code</h3>
+  <pre>
+  <code>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+&lt;/body&gt;
+&lt;/html&gt;
+  </code>
+</pre>
+
+</body>
+<script src="script.js"></script>
+
+</html>

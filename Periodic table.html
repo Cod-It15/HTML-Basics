@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+</head>
+<style>
+    *{
+
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+    .class {
+        border-spacing: 30px;
+    }
+
+    #colorchange {
+        background-color: rgb(35, 28, 19) !important;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #table {
+        border-spacing: 20px;
+        margin: 0%;
+        padding: 0%;
+    }
+</style>
+
+<body>
+
+
+
+
+    <!-- <img src="https://www.visionlearning.com/images/figure-images/52-a.jpg" alt="This is Periodic Table" height="999" 
+        width="1850">-->
+    <table border="13px">
+        <tr>
+            <th>SNo.</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Age</th>
+            <th>Sport</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ayaan</td>
+                <td>Subject</td>
+                <td>Age</td>
+                <td>Sport</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Periodic Table</h1>
+    <table border="0px" id="table">
+        <tr id="r1">
+            <td id="H" title="Hydrogen"><sup>1</sup>H</td>
+            <td id="D" title="Deuterium"><sup>1</sup>D</td>
+            <td class="empty" colspan="14"></td>
+            <td id="X" title="Unknown"><sup>?</sup>X</td>
+            <td id="He" title="Helium"><sup>2</sup>He</td>
+        </tr>
+        <tr id="r2">
+            <td id="Li" title="Lithium"><sup>3</sup>Li</td>
+            <td id="Be" title="Beryllium"><sup>4</sup>Be</td>
+            <td class="empty" id="desc" colspan="10" rowspan="2"></td>
+            <td id="B" title="Boron"><sup>5</sup>B</td>
+            <td id="C" title="Carbon"><sup>6</sup>C</td>
+            <td id="N" title="Nitrogen"><sup>7</sup>N</td>
+            <td id="O" title="Oxygen"><sup>8</sup>O</td>
+            <td id="F" title="Fluorine"><sup>9</sup>F</td>
+            <td id="Ne" title="Neon"><sup>10</sup>Ne</td>
+        </tr>
+        <tr id="r3">
+            <td id="Na" title="Sodium"><sup>11</sup>Na</td>
+            <td id="Mg" title="Magnesium"><sup>12</sup>Mg</td>
+            <td id="Al" title="Aluminium"><sup>13</sup>Al</td>
+            <td id="Si" title="Silicon"><sup>14</sup>Si</td>
+            <td id="P" title="Phosphorus"><sup>15</sup>P</td>
+            <td id="S" title="Sulfur"><sup>16</sup>S</td>
+            <td id="Cl" title="Chlorine"><sup>17</sup>Cl</td>
+            <td id="Ar" title="Argon"><sup>18</sup>Ar</td>
+        </tr>
+        <tr id="r4">
+            <td id="K" title="Potassium"><sup>19</sup>K</td>
+            <td id="Ca" title="Calcium"><sup>20</sup>Ca</td>
+            <td id="Sc" title="Scandium"><sup>21</sup>Sc</td>
+            <td id="Ti" title="Titanium"><sup>22</sup>Ti</td>
+            <td id="V" title="Vanadium"><sup>23</sup>V</td>
+            <td id="Cr" title="Chromium"><sup>24</sup>Cr</td>
+            <td id="Mn" title="Manganese"><sup>25</sup>Mn</td>
+            <td id="Fe" title="Iron"><sup>26</sup>Fe</td>
+            <td id="Co" title="Cobalt"><sup>27</sup>Co</td>
+            <td id="Ni" title="Nickel"><sup>28</sup>Ni</td>
+            <td id="Cu" title="Copper"><sup>29</sup>Cu</td>
+            <td id="Zn" title="Zinc"><sup>30</sup>Zn</td>
+            <td id="Ga" title="Gallium"><sup>31</sup>Ga</td>
+            <td id="Ge" title="Germanium"><sup>32</sup>Ge</td>
+            <td id="As" title="Arsenic"><sup>33</sup>As</td>
+            <td id="Se" title="Selenium"><sup>34</sup>Se</td>
+            <td id="Br" title="Bromine"><sup>35</sup>Br</td>
+            <td id="Kr" title="Krypton"><sup>36</sup>Kr</td>
+        </tr>
+        <tr id="r5">
+            <td id="Rb" title="Rubidium"><sup>37</sup>Rb</td>
+            <td id="Sr" title="Strontium"><sup>38</sup>Sr</td>
+            <td id="Y" title="Yttrium"><sup>39</sup>Y</td>
+            <td id="Zr" title="Zirconium"><sup>40</sup>Zr</td>
+            <td id="Nb" title="Niobium"><sup>41</sup>Nb</td>
+            <td id="Mo" title="Molybdenum"><sup>42</sup>Mo</td>
+            <td id="Tc" title="Technetium"><sup>43</sup>Tc</td>
+            <td id="Ru" title="Ruthenium"><sup>44</sup>Ru</td>
+            <td id="Rh" title="Rhodium"><sup>45</sup>Rh</td>
+            <td id="Pd" title="Palladium"><sup>46</sup>Pd</td>
+            <td id="Ag" title="Silver"><sup>47</sup>Ag</td>
+            <td id="Cd" title="Cadmium"><sup>48</sup>Cd</td>
+            <td id="In" title="Indium"><sup>49</sup>In</td>
+            <td id="Sn" title="Tin"><sup>50</sup>Sn</td>
+            <td id="Sb" title="Antimony"><sup>51</sup>Sb</td>
+            <td id="Te" title="Tellurium"><sup>52</sup>Te</td>
+            <td id="I" title="Iodine"><sup>53</sup>I</td>
+            <td id="Xe" title="Xenon"><sup>54</sup>Xe</td>
+        </tr>
+        <tr id="r6">
+            <td id="Cs" title="Caesium"><sup>55</sup>Cs</td>
+            <td id="Ba" title="Barium"><sup>56</sup>Ba</td>
+            <td id="La" title="Lanthanum"><sup>57-71</sup>La</td>
+            <td id="Hf" title="Hafnium"><sup>72</sup>Hf</td>
+            <td id="Ta" title="Tantalum"><sup>73</sup>Ta</td>
+            <td id="W" title="Tungsten"><sup>74</sup>W</td>
+            <td id="Re" title="Rhenium"><sup>75</sup>Re</td>
+            <td id="Os" title="Osmium"><sup>76</sup>Os</td>
+            <td id="Ir" title="Iridium"><sup>77</sup>Ir</td>
+            <td id="Pt" title="Platinum"><sup>78</sup>Pt</td>
+            <td id="Au" title="Gold"><sup>79</sup>Au</td>
+            <td id="Hg" title="Mercury"><sup>80</sup>Hg</td>
+            <td id="Tl" title="Thallium"><sup>81</sup>Tl</td>
+            <td id="Pb" title="Lead"><sup>82</sup>Pb</td>
+            <td id="Bi" title="Bismuth"><sup>83</sup>Bi</td>
+            <td id="Po" title="Polonium"><sup>84</sup>Po</td>
+            <td id="At" title="Astatine"><sup>85</sup>At</td>
+            <td id="Rn" title="Radon"><sup>86</sup>Rn</td>
+        </tr>
+        <tr id="r7">
+            <td id="Fr" title="Francium"><sup>87</sup>Fr</td>
+            <td id="Ra" title="Radium"><sup>88</sup>Ra</td>
+            <td id="Ac" title="Actinium"><sup>89-103</sup>Ac</td>
+            <td id="Rf" title="Rutherfordium"><sup>104</sup>Rf</td>
+            <td id="Db" title="Dubnium"><sup>105</sup>Db</td>
+            <td id="Sg" title="Seaborgium"><sup>106</sup>Sg</td>
+            <td id="Bh" title="Bohrium"><sup>107</sup>Bh</td>
+            <td id="Hs" title="Hassium"><sup>108</sup>Hs</td>
+            <td id="Mt" title="Meitnerium"><sup>109</sup>Mt</td>
+            <td id="Ds" title="Darmstadtium"><sup>110</sup>Ds</td>
+            <td id="Rg" title="Roentgenium"><sup>111</sup>Rg</td>
+            <td id="Cn" title="Copernicium"><sup>112</sup>Cn</td>
+            <td id="Nh" title="Nihonium"><sup>113</sup>Nh</td>
+            <td id="Fl" title="Flerovium"><sup>114</sup>Fl</td>
+            <td id="Mc" title="Moscovium"><sup>115</sup>Mc</td>
+            <td id="Lv" title="Livermorium"><sup>116</sup>Lv</td>
+            <td id="Ts" title="Tennessine"><sup>117</sup>Ts</td>
+            <td id="Og" title="Oganesson"><sup>118</sup>Og</td>
+        </tr>
+        <tr class="spacer">
+            <td class="empty" colspan=18></td>
+        </tr>
+        <div id="colorchange">
+            <tr>
+                <td class="empty" colspan="2"></td>
+                <td id="La" title="Lanthanum"><sup>57</sup>La</td>
+                <td id="Ce" title="Cerium"><sup>58</sup>Ce</td>
+                <td id="Pr" title="Praseodymium"><sup>59</sup>Pr</td>
+                <td id="Nd" title="Neodymium"><sup>60</sup>Nd</td>
+                <td id="Pm" title="Promethium"><sup>61</sup>Pm</td>
+                <td id="Sm" title="Samarium"><sup>62</sup>Sm</td>
+                <td id="Eu" title="Europium"><sup>63</sup>Eu</td>
+                <td id="Gd" title="Gadolinium"><sup>64</sup>Gd</td>
+                <td id="Tb" title="Terbium"><sup>65</sup>Tb</td>
+                <td id="Dy" title="Dysprosium"><sup>66</sup>Dy</td>
+                <td id="Ho" title="Holmium"><sup>67</sup>Ho</td>
+                <td id="Er" title="Erbium"><sup>68</sup>Er</td>
+                <td id="Tm" title="Thulium"><sup>69</sup>Tm</td>
+                <td id="Yb" title="Ytterbium"><sup>70</sup>Yb</td>
+                <td id="Lu" title="Lutetium"><sup>71</sup>Lu</td>
+                <td class="empty"></td>
+            </tr>
+            <tr>
+                <td class="empty" colspan="2"></td>
+                <td id="Ac" title="Actinium"><sup>89</sup>Ac</td>
+                <td id="Th" title="Thorium"><sup>90</sup>Th</td>
+                <td id="Pa" title="Protactinium"><sup>91</sup>Pa</td>
+                <td id="U" title="Uranium"><sup>92</sup>U</td>
+                <td id="Np" title="Neptunium"><sup>93</sup>Np</td>
+                <td id="Pu" title="Plutonium"><sup>94</sup>Pu</td>
+                <td id="Am" title="Americium"><sup>95</sup>Am</td>
+                <td id="Cm" title="Curium"><sup>96</sup>Cm</td>
+                <td id="Bk" title="Berkelium"><sup>97</sup>Bk</td>
+                <td id="Cf" title="Californium"><sup>98</sup>Cf</td>
+                <td id="Es" title="Einsteinium"><sup>99</sup>Es</td>
+                <td id="Fm" title="Fermium"><sup>100</sup>Fm</td>
+                <td id="Md" title="Mendelevium"><sup>101</sup>Md</td>
+                <td id="No" title="Nobelium"><sup>102</sup>No</td>
+                <td id="Lr" title="Lawrencium"><sup>103</sup>Lr</td>
+                <td class="empty"></td>
+            </tr>
+        </div>
+    </table>
+    <!-- .class -->
+    &#xD7;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &#xD7;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &#xD7;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &#xD7;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &#xD7;
+
+</body>
+
+
+</html>
