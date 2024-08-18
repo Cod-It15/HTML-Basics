@@ -20,7 +20,7 @@
     .nav {
         background-color: #0f0e0b !important;
         flood-opacity: 20%;
-        opacity: 40%;
+        /* opacity: 40%; */
         flood-color: chartreuse;
         height: 50px;
         width: 40%;
@@ -46,13 +46,15 @@
 </style>
 
 <body>
-    <nav dir="rtl" class="nav">
-        <ul dir="rtl" class="nav items">
+    <nav   class="nav">
+        <bdo dir="rtl">
+        <ul  class="nav items">
             <li>Home</li>
             <li>About</li>
             <li>Dropdown</li>
             <li>Contact Us</li>
         </ul>
+    </bdo>
     </nav>
 </body>
 

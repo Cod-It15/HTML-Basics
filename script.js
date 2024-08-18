@@ -1,1 +1,0 @@
-alert("Start Learning With Zeal.")
